@@ -9,5 +9,9 @@ class Matrix(object):
             self.matrix[0][i]=i
         for j in range(self.column):
             self.matrix[j][0]=j
+
     def add(self, vertex1, vertex2, weight):
         self.matrix[vertex1][vertex2]=weight
+
+    def display(self):
+        pprint.pprint(self.matrix)
