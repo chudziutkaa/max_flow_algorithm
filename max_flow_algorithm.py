@@ -46,3 +46,21 @@ class Matrix(object):
         else:
             print "Maximum flow for this path from vertex %s to vertex %s equals: %s" %(start, end, max_flow)
 
+def Flows():
+    matrix=Matrix(9,9)
+    matrix.add(1,4,5)
+    matrix.add(2,5,7)
+    matrix.add(3,4,4)
+    matrix.add(3,8,1)
+    matrix.add(4,2,2)
+    matrix.add(4,5,4)
+    matrix.add(4,7,4)
+    matrix.add(5,6,3)
+    matrix.add(6,8,4)
+    matrix.add(7,4,2)
+    matrix.add(7,5,3)
+    matrix.add(8,7,6)
+    matrix.display()
+    matrix.flow(8,2)
+
+Flows()
